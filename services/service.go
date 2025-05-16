@@ -78,10 +78,10 @@ func (s *service) Login(ctx context.Context) error {
 		return fmt.Errorf("failed to connect: %v", err)
 	}
 
-	err = s.whatsapp.BuildHistorySync(ctx)
-	if err != nil {
-		return fmt.Errorf("failed to build history sync: %v", err)
-	}
+	// err = s.whatsapp.BuildHistorySync(ctx)
+	// if err != nil {
+	// 	return fmt.Errorf("failed to build history sync: %v", err)
+	// }
 
 	return nil
 }
